@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+h3 {
+  color: green;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: bolder;
+}
+h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+p {
+  font-size: 2rem;
+}
+
+.bg-img {
+  background-image: url("me.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+}
+/* media */
