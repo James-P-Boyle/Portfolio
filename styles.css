@@ -19,7 +19,6 @@ h5 {
 p {
   font-size: 1.5rem;
 }
-
 .bg-img {
   background-image: url("me.png");
   background-size: cover;
@@ -28,5 +27,16 @@ p {
   height: 400px;
   width: 400px;
   border-radius: 50%;
+}
+
+#heading1,
+#heading2,
+#heading3 {
+  color: green;
+  border: 2px solid black;
+}
+
+div {
+  border: 2px solid black;
 }
 /* media */
