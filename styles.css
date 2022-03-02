@@ -30,6 +30,15 @@ p {
   border-radius: 50%;
 }
 
+span {
+  animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
 #heading1,
 #heading2,
 #heading3 {
