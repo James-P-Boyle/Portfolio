@@ -1,6 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,900;1,600&family=Roboto+Slab:wght@300;400;500;700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Slab", serif;
 }
 
 h2 {
@@ -8,7 +22,7 @@ h2 {
   font-weight: bolder;
 }
 h5 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: bolder;
 }
 p {
@@ -37,21 +51,34 @@ span {
 #heading2,
 #heading3 {
   color: #1ed760;
-  font-weight: bolder;
+  font-weight: 900;
+}
+.message {
+  background-color: rgba(0, 0, 0, 0.178);
+  border-radius: 10px;
 }
 
 .icons {
   cursor: pointer;
   text-align: center;
 }
-
-.card-img-top {
-  height: 50px;
-  width: 50px;
-}
-.card-img-top {
-  height: 50px;
-  width: 50px;
+.bg-img {
+  border: 3px solid #1ed760;
 }
 
-/* media */
+/* ABOUT */
+#about p {
+  opacity: 0.9;
+}
+.location {
+  color: #e01616;
+}
+
+@media only screen and (min-width: 992px) {
+  .main-content {
+    margin-left: 50px;
+  }
+  .dark-section {
+    color: wheat;
+  }
+}
