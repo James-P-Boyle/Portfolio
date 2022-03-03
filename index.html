@@ -25,27 +25,27 @@
   <body>
     <div class="main">
       <div class="container-fluid">
-        <div class="row test">
+        <div class="row">
           <!-- DARK SIDE BAR -->
           <div class="col-lg-3 bg-dark">
             <div class="row">
               <div class="p-3 icons">
                 <div class="row spin">
-                  <div class="col-4">
+                  <div class="col-2 offset-2">
                     <img
                       class="card-img-top"
                       src="images/discord.png"
                       alt="Card image cap"
                     />
                   </div>
-                  <div class="col-4">
+                  <div class="col-2 offset-1">
                     <img
                       class="card-img-top"
                       src="images/linked.png"
                       alt="Card image cap"
                     />
                   </div>
-                  <div class="col-4">
+                  <div class="col-2 offset-1">
                     <img
                       class="card-img-top"
                       src="images/github.png"
@@ -54,38 +54,43 @@
                   </div>
                 </div>
               </div>
-              <div class="bg-img col col-lg-12"></div>
-              <div class="col col-lg-12 mt-5">
-                <p id="heading1">HI ...</p>
+              <div class="row">
+                <div class="bg-img col-md-6 col-lg-12"></div>
+                <div class="col-sm-12 col-md-6 col-lg-12 mt-5 message">
+                  <p id="heading1">HI ...</p>
 
-                <p id="heading2">I'M JAMES...</p>
+                  <p id="heading2">I'M JAMES...</p>
 
-                <p id="heading3"></p>
+                  <p id="heading3"></p>
+                </div>
               </div>
             </div>
           </div>
 
           <!-- MAIN CONTENT -->
-          <div class="col-lg-8">
-            <div class="main-content mt-2">
-              <h2>ABOUT ME</h2>
-              <hr />
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged.
-              </p>
+          <div class="col-lg-8 my-5">
+            <div class="main-content">
+              <section id="about">
+                <h2>ABOUT ME</h2>
+                <hr />
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                  <i class="bi bi-geo-alt location">Hunfeld, Hessen, Germany</i>
+                  Lorem Ipsum has been the industry's standard dummy text ever
+                  since the 1500s, when an unknown printer took a galley of type
+                  and scrambled it to make a type specimen book. It has survived
+                  not only five centuries, but also the leap into electronic
+                  typesetting, remaining essentially unchanged.
+                </p>
+              </section>
             </div>
+
             <div class="main-content">
               <h2>MY TECH STACK</h2>
-
               <hr />
-
               <div class="row text-center">
-                <div class="card col-md-4 col-sm-6">
+                <div class="card col-md-4 col-sm-6 col-xl-3">
                   <img
                     class="card-img-top"
                     src="images/git.svg"
@@ -95,7 +100,7 @@
                     <h5 class="card-title">GIT</h5>
                   </div>
                 </div>
-                <div class="card col-md-4 col-sm-6">
+                <div class="card col-md-4 col-sm-6 col-xl-3">
                   <img
                     class="card-img-top"
                     src="images/html.svg"
@@ -105,7 +110,7 @@
                     <h5 class="card-title">HTML</h5>
                   </div>
                 </div>
-                <div class="card col-md-4 col-sm-6">
+                <div class="card col-md-4 col-sm-6 col-xl-3">
                   <img
                     class="card-img-top"
                     src="images/css.png"
@@ -115,7 +120,7 @@
                     <h5 class="card-title">CSS</h5>
                   </div>
                 </div>
-                <div class="card col-md-4 col-sm-6">
+                <div class="card col-md-4 col-sm-6 col-xl-3">
                   <img
                     class="card-img-top"
                     src="images/javascript.svg"
@@ -125,7 +130,27 @@
                     <h5 class="card-title">JAVASCRIPT</h5>
                   </div>
                 </div>
-                <div class="card col-md-4 col-sm-6">
+                <div class="card col-md-4 col-sm-6 col-xl-3">
+                  <img
+                    class="card-img-top"
+                    src="images/javascript.svg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">JAVASCRIPT</h5>
+                  </div>
+                </div>
+                <div class="card col-md-4 col-sm-6 col-xl-3">
+                  <img
+                    class="card-img-top"
+                    src="images/javascript.svg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">JAVASCRIPT</h5>
+                  </div>
+                </div>
+                <div class="card col-md-4 col-sm-6 col-xl-3">
                   <img
                     class="card-img-top"
                     src="images/react.svg"
@@ -135,7 +160,7 @@
                     <h5 class="card-title">REACT</h5>
                   </div>
                 </div>
-                <div class="card col-md-4 col-sm-6">
+                <div class="card col-md-4 col-sm-6 col-xl-3">
                   <img
                     class="card-img-top"
                     src="images/node.png"
@@ -151,8 +176,8 @@
               <h2 class="mt-4">PROJECTS</h2>
               <hr />
 
-              <div class="col-md-6 text-center">
-                <div class="card">
+              <div class="text-center row">
+                <div class="card col-6">
                   <img class="card-img-top" src="..." alt="Card image cap" />
                   <div class="card-body">
                     <h5 class="card-title">FULL STACK BLOG</h5>
@@ -161,7 +186,7 @@
                     <a href="#" class="btn btn-primary">View code</a>
                   </div>
                 </div>
-                <div class="card">
+                <div class="card col-6">
                   <img class="card-img-top" src="..." alt="Card image cap" />
                   <div class="card-body">
                     <h5 class="card-title">FULL STACK BLOG</h5>
@@ -170,7 +195,7 @@
                     <a href="#" class="btn btn-primary">View code</a>
                   </div>
                 </div>
-                <div class="card">
+                <div class="card col-6">
                   <img class="card-img-top" src="..." alt="Card image cap" />
                   <div class="card-body">
                     <h5 class="card-title">FULL STACK BLOG</h5>
@@ -179,7 +204,7 @@
                     <a href="#" class="btn btn-primary">View code</a>
                   </div>
                 </div>
-                <div class="card">
+                <div class="card col-6">
                   <img class="card-img-top" src="..." alt="Card image cap" />
                   <div class="card-body">
                     <h5 class="card-title">FULL STACK BLOG</h5>
