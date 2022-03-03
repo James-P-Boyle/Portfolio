@@ -3,12 +3,6 @@
   margin: 0;
 }
 
-h3 {
-  color: green;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  font-weight: bolder;
-}
 h2 {
   font-size: 2.5rem;
   font-weight: bolder;
@@ -42,17 +36,22 @@ span {
 #heading1,
 #heading2,
 #heading3 {
-  color: green;
-  border: 2px solid black;
+  color: #1ed760;
+  font-weight: bolder;
 }
 
-div {
-  border: 2px solid black;
+.icons {
+  cursor: pointer;
+  text-align: center;
 }
-.green {
-  color: green;
+
+.card-img-top {
+  height: 50px;
+  width: 50px;
 }
-.tester {
-  border: 2px solid red;
+.card-img-top {
+  height: 50px;
+  width: 50px;
 }
+
 /* media */

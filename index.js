@@ -7,7 +7,7 @@ heading2.style.display = "none";
  */
 
 const introArray = [
-  "An aspiring front end developer with a passion for all things tech",
+  "AN ASPIRING FRONT END DEVELOPER WITH A PASSION FOR ALL THINGS TECH",
 ];
 let introPosition = 0;
 const speed = 40;
