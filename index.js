@@ -20,6 +20,5 @@ typer = () => {
 window.addEventListener("load", typer);
 
 function showZoey() {
-  const zoey = document.querySelector("#zoey");
   $("#zoey").toggleClass("visible");
 }
