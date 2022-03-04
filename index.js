@@ -1,10 +1,6 @@
 const heading1 = $("heading1");
 const heading2 = $("heading2");
 const heading3 = $("heading3");
-/* 
-
-heading2.style.display = "none";
- */
 
 const introArray = [
   "AN ASPIRING FRONT END DEVELOPER WITH A PASSION FOR ALL THINGS TECH",
@@ -22,3 +18,8 @@ typer = () => {
 };
 
 window.addEventListener("load", typer);
+
+function showZoey() {
+  const zoey = document.querySelector("#zoey");
+  $("#zoey").toggleClass("visible");
+}
