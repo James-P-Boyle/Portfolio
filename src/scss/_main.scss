@@ -1,0 +1,40 @@
+@import "./variables/theme";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    // background-color: $bg-color-dark;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: $base-font-size * $golden-ratio * $golden-ratio;
+    line-height: $base-font-size * 2.5;
+}
+
+h2 {
+    font-size: $base-font-size * $golden-ratio;
+    line-height: $base-font-size * 2.2;
+}
+
+h3 {
+    font-size: $base-font-size * $golden-ratio / $golden-ratio;
+    line-height: $base-font-size * 1.8;
+}
+
+p {
+    font-size: $base-font-size;
+    line-height: $base-font-size * 1.5;
+    max-width: 75ch;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
