@@ -1,3 +1,4 @@
+@use "sass:math";
 @import "./variables/theme";
 
 * {
@@ -31,7 +32,7 @@ h2 {
 }
 
 h3 {
-    font-size: $base-font-size * $golden-ratio / $golden-ratio;
+    font-size: math.div($base-font-size * $golden-ratio, $golden-ratio);
     line-height: $base-font-size * 1.8;
 }
 
