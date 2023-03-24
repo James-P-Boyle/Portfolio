@@ -3,7 +3,7 @@ export default function About() {
     return (
         <section id="about">
             <div>
-                
+                {/* image */}
             </div>
             <div>
                 <h1>James Boyle</h1>

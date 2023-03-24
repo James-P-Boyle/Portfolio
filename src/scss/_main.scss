@@ -14,6 +14,10 @@ body {
 main {
     max-width: 800px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+    padding: 0 0.4rem;
 }
 
 h1 {
@@ -29,6 +33,11 @@ h2 {
 h3 {
     font-size: $base-font-size * $golden-ratio / $golden-ratio;
     line-height: $base-font-size * 1.8;
+}
+
+h4 {
+    font-size: $base-font-size;
+    line-height: $base-font-size * 1.5;
 }
 
 p {
