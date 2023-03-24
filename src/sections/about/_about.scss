@@ -8,6 +8,7 @@
     & > div:first-child {
         height: 150px;
         width: 150px;
+        border: 1px solid black;
     }
 
     & > div:nth-child(2) {
@@ -16,10 +17,6 @@
         justify-content: center;
         align-items: center;
         gap: $gap;
-        
-        p {
-          text-align: center;
-        }
     }
 
     & > div:last-child {

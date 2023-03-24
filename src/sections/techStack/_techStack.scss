@@ -1,0 +1,39 @@
+#techStack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    gap: $gap;
+
+    .flexContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: $gap;
+        flex-wrap: wrap;
+      
+        @media (min-width: 768px) { // Switch to 3 columns on larger screens
+          grid-template-columns: repeat(4, 1fr);
+        }
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: $gap / 2;
+   
+            svg {
+                height: 3.5rem;
+                width: 3.5rem;
+            }
+
+            span {
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+  
+  }
