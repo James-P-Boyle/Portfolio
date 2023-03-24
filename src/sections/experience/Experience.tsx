@@ -1,3 +1,4 @@
+import SectionBreak from "../../components/SectionBreak"
 import { ExperienceCard } from "./components/ExperienceCard"
 
 export default function Experience() {
@@ -6,6 +7,8 @@ export default function Experience() {
         <section id="experience">
 
             <h2>Relevant Expierence</h2>
+
+            <SectionBreak />
 
             <ExperienceCard
                 position="Full Stack Developer"

@@ -6,10 +6,12 @@
 @import "variables/theme";
 
 // Sections
-@import "../sections/about/about";
+@import "../sections/about/scss/about";
 
-@import "../sections/experience/experience";
-    @import "../sections/experience/components/experienceCard";
+@import "../sections/experience/scss/experience";
+@import "../sections/experience/components/scss/experienceCard";
 
-@import "../sections/techStack/techStack";
+@import "../sections/techStack/scss/techStack";
  
+// Components
+@import "../components/components"

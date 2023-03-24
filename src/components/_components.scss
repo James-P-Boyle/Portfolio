@@ -1,0 +1,43 @@
+.sectionBreak {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    span {
+      height: 3px;
+      background-color: black;
+      margin-bottom: 8px;
+      width: 0;
+      border-radius: 20px;
+    }
+  
+    &.visible {
+        span:first-child {
+            animation: growWidth1 1s ease forwards;
+            animation-delay: 0.5s;
+        }
+        span:last-child {
+            animation: growWidth2 1s ease forwards;
+            animation-delay: 0.5s;
+        }
+    }
+  
+    @keyframes growWidth1 {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100px;
+      }
+    }
+  
+    @keyframes growWidth2 {
+      from {
+        width: 0;
+      }
+      to {
+        width: 40px;
+      }
+    }
+}
+  
