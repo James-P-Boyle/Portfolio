@@ -49,3 +49,8 @@ p {
     text-overflow: ellipsis;
     overflow: hidden;
 }
+
+span {
+    font-size: $base-font-size;
+    line-height: $base-font-size * 1.5;
+}
