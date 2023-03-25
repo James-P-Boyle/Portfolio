@@ -13,24 +13,27 @@
         gap: $gap;
         flex-wrap: wrap;
       
-        @media (min-width: 768px) { // Switch to 3 columns on larger screens
-          grid-template-columns: repeat(4, 1fr);
-        }
-
         .item {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: $gap / 2;
+            gap: calc($gap / 2);
    
             svg {
-                height: 3.5rem;
-                width: 3.5rem;
+                height: 2rem;
+                width: 2rem;
             }
 
             span {
                 font-size: 0.9rem;
+            }
+
+            @media (min-width: $md) { // Switch to 3 columns on larger screens
+                svg {
+                    height: 3.5rem;
+                    width: 3.5rem;
+                }
             }
         }
     }
