@@ -29,14 +29,12 @@
                 font-size: 0.9rem;
             }
 
-            @media (min-width: $md) { // Switch to 3 columns on larger screens
+            @media (min-width: $md) { 
                 svg {
                     height: 3.5rem;
                     width: 3.5rem;
                 }
             }
         }
-    }
-
-  
-  }
+    }  
+}

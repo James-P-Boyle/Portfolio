@@ -1,7 +1,7 @@
 import SectionBreak from "../../components/SectionBreak"
 
 export default function TechStack() {
-
+ 
     return (
         <section id="techStack">
 
