@@ -26,8 +26,10 @@
   align-items: center;
   justify-content: center;
   gap: $gap;
+  border-radius: 10px;
   padding: 1rem;
   width: 100%;
+  background-color: white;
   
   p {
       text-align: center;

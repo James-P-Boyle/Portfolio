@@ -1,12 +1,7 @@
-import { useEffect, useRef } from "react"
-import useIsInView from "../hooks/useIsInView"
-
 export default function SectionBreak() {
 
-    const [isInView, ref] = useIsInView()
-
     return (
-        <div className={`sectionBreak ${isInView ? 'visible' : ''}`} ref={ref}>
+        <div className={`sectionBreak`}>
             <span></span>
             <span></span>
         </div>

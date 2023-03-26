@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Button from "../../../components/Button"
 
 interface ExperienceCardProps {
     position: string
@@ -31,14 +32,13 @@ export function ExperienceCard({ position, company, location, date, description 
             
             <h4>{date}</h4>
 
-            <button onClick={handleToggleDescription}>
-                {
-                    showDescription 
+            <Button onClickFunction={handleToggleDescription}>
+                {showDescription 
                     ? 'Show less' 
                     : 'Show more'
                 }
-            </button>
-
+            </Button>
+     
             <p>{description}</p>
         </div>
     )

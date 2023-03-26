@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Button from "../../../components/Button"
 import { Project } from "../Projects"
 
 interface ProjectCardProps extends Project {}
@@ -54,27 +55,30 @@ export default function ProjectCard({
         </div>
         
         <div>
-            <button onClick={handleTechStackClicked}>
+            <Button onClickFunction={handleTechStackClicked}>
                 {showTechStack 
                     ? 'Overview' 
                     : 'Tech Stack'
                 }
-            </button> 
+            </Button>
+            
+            <Button>
+                View Code
+            </Button>
 
-            <button>View Code</button> 
-
-            <button>
-                <a href={liveUrl} target="_blank" rel="noopener noreferrer">
-                    View Live
-                </a>
-            </button> 
-
-            <button onClick={handleImageClicked}>
+            <Button onClickFunction={handleImageClicked}>
                 {showImage 
                     ? 'Hide Image' 
                     : 'Show Image'
                 }
-            </button>
+            </Button>
+
+            <Button>
+                <a href={liveUrl} target="_blank" rel="noopener noreferrer">
+                    View Live
+                </a>
+            </Button>
+
         </div>
     </div>
     )
