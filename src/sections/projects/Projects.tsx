@@ -9,7 +9,7 @@ export default function Projects() {
             <h2>Projects</h2>
 
             <SectionBreak />
-
+            
             {projectsData.map((project) => (
                 <ProjectCard 
                     name={project.name}
@@ -39,6 +39,14 @@ const projectsData: Project[] = [
       description: "A social media website to share pictures of my daugther Zoey with my family and friends",
       techStack: ["React", "Node.js", "MongoDB", "Node.js"],
       imageUrl: "https://picsum.photos/200/300",
+      repoUrl: "https://github.com/memoey",
+      liveUrl: "https://memoey.com",
+    },
+    {
+      name: "Jamesy",
+      description: "A second sample description for one of my big great projects",
+      techStack: ["React", "Node.js", "MongoDB"],
+      imageUrl: "https://picsum.photos/200",
       repoUrl: "https://github.com/memoey",
       liveUrl: "https://memoey.com",
     },

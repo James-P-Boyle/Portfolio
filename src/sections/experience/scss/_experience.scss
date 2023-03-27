@@ -26,9 +26,10 @@
   align-items: center;
   justify-content: center;
   gap: $gap;
-  border-radius: 10px;
+  border-radius: $radius;
   padding: 1rem;
-  width: 100%;
+  max-width: 500px;
+
   background-color: white;
   
   p {

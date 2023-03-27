@@ -1,3 +1,4 @@
+import SocialLinks from './components/SocialLinks'
 import './scss/app.scss'
 import About from './sections/about/About'
 import Experience from './sections/experience/Experience'
@@ -14,6 +15,7 @@ function App() {
       <TechStack />
       <WhatCanIOffer />
       <Projects />
+      <SocialLinks />
     </main>
   )
 }

@@ -29,10 +29,13 @@
                 font-size: 0.9rem;
             }
 
-            @media (min-width: $md) { 
-                svg {
+            svg {
+                height: 2.5rem;
+                width: 2.5rem;
+
+                @media (min-width: $md) { 
                     height: 3.5rem;
-                    width: 3.5rem;
+                    width: 3.5rem;   
                 }
             }
         }

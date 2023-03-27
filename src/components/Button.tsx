@@ -4,16 +4,18 @@ interface ButtonProps {
 onClickFunction?: () => void
 children: ReactNode
 type?: "button" | "submit" | "reset";
+addedClasses?: string
 }
 
 export default function Button({ 
     onClickFunction, 
     children, 
-    type = "button" 
+    type = "button", 
+    addedClasses
 }: ButtonProps) {
 
     return (
-        <button className={`btn-primary`} onClick={onClickFunction} type={type}>
+        <button className={`btn-primary ${addedClasses}`} onClick={onClickFunction} type={type}>
             { children }
         </button> 
     )

@@ -36,10 +36,10 @@ export default function ProjectCard({
             }}
         >
 
-        <h3 className={`${showImage ? 'contrast' : ''}`}>{name}</h3>
+        <h3 className={`${showImage ? 'showImage' : ''}`}>{name}</h3>
         
 
-        <div className={`projectCardContent ${showImage ? 'hide' : ''}`} >
+        <div className={`projectCardContent ${showImage ? 'showImage' : ''}`} >
             
             {showTechStack ? (
                 <div>
@@ -55,25 +55,35 @@ export default function ProjectCard({
         </div>
         
         <div>
-            <Button onClickFunction={handleTechStackClicked}>
-                {showTechStack 
-                    ? 'Overview' 
-                    : 'Tech Stack'
-                }
+            <Button 
+                onClickFunction={handleTechStackClicked}
+                addedClasses={`${showImage ? 'opacity' : ''}`}
+            >
+                    {showTechStack 
+                        ? 'Overview' 
+                        : 'Tech Stack'
+                    }
             </Button>
             
-            <Button>
+            <Button
+                addedClasses={`${showImage ? 'opacity' : ''}`}
+            >
                 View Code
             </Button>
 
-            <Button onClickFunction={handleImageClicked}>
+            <Button 
+                onClickFunction={handleImageClicked}
+                addedClasses={`${showImage ? 'opacity' : ''}`}
+            >
                 {showImage 
                     ? 'Hide Image' 
                     : 'Show Image'
                 }
             </Button>
 
-            <Button>
+            <Button
+                addedClasses={`${showImage ? 'opacity' : ''}`}
+            >
                 <a href={liveUrl} target="_blank" rel="noopener noreferrer">
                     View Live
                 </a>

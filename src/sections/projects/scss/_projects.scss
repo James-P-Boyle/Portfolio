@@ -6,10 +6,13 @@
     gap: $gap;
     min-height: 100vh;
 
+    h3.showImage {
+        opacity: 0;
+    }
+    
     .projectCard {
         display: flex;
         flex-direction: column;
-        gap: $gap;
         padding: 1rem 0.5rem;
         width: 100%;
         max-width: 500px;
@@ -25,7 +28,7 @@
             padding: 0.5rem;
             transition: all 0.3s ease-in-out;
 
-            &.hide {
+            &.showImage {
                 opacity: 0;
             }
         }
@@ -36,6 +39,7 @@
             justify-content: center;
             flex-wrap: wrap;
             gap: 0.2rem;
+            
         }
     } 
 } 

@@ -9,7 +9,7 @@ export default function Experience() {
             <h2>Relevant Expierence</h2>
 
             <SectionBreak />
-
+            
             <ExperienceCard
                 position="Full Stack Developer"
                 company="Compose OHG"

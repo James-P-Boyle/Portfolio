@@ -19,24 +19,4 @@
         gap: $gap;
     }
 
-    & > div:last-child {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 100%;
-        padding: 1rem 0;
-        
-        button {
-          padding: 0.5rem 1rem;
-          font-size: 1.5rem;
-          background-color: #eee;
-          border: none;
-          border-radius: 0.5rem;
-          cursor: pointer;
-          
-          &:hover {
-            background-color: #ccc;
-          }
-        }
-    }
 }
