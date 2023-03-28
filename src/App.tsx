@@ -1,3 +1,4 @@
+import { useRef } from 'react'
 import MainLayout from './components/layouts/MainLayout'
 import SocialLinks from './components/SocialLinks'
 import './scss/app.scss'
@@ -10,19 +11,29 @@ import WhatCanIOffer from './sections/whatCanIOffer/WhatCanIOffer'
 
 export default function App() {
 
+  const aboutRef = useRef<HTMLDivElement>(null);
+  const experienceRef = useRef<HTMLDivElement>(null);
+  const techStackRef = useRef<HTMLDivElement>(null);
+  const whatCanIOfferRef = useRef<HTMLDivElement>(null);
+  const projectsRef = useRef<HTMLDivElement>(null);
+
   return (
     <>
-      <Navigation />
+      <Navigation
+        aboutRef={aboutRef}
+        experienceRef={experienceRef}
+        techStackRef={techStackRef}
+        whatCanIOfferRef={whatCanIOfferRef}
+        projectsRef={projectsRef}
+      />
 
       <MainLayout>
-
-        <About />
-        <Experience />
-        <TechStack />
-        <WhatCanIOffer />
-        <Projects />
+        <About ref={aboutRef} />
+        <Experience ref={experienceRef} />
+        <TechStack ref={techStackRef} />
+        <WhatCanIOffer ref={whatCanIOfferRef} />
+        <Projects ref={projectsRef} />
         <SocialLinks />
-
       </MainLayout>
     </>
   )

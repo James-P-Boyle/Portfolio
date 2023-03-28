@@ -1,9 +1,10 @@
+import { forwardRef } from "react";
 import SectionBreak from "../../components/SectionBreak";
 
-export default function WhatCanIOffer() {
+const WhatCanIOffer = forwardRef<HTMLDivElement>((props, ref) => {
 
     return (
-        <section id="whatCanIOffer">
+        <section id="whatCanIOffer" ref={ref}>
             
             <h2>What Can I Offer You</h2>
 
@@ -27,4 +28,6 @@ export default function WhatCanIOffer() {
 
         </section>
     )
-}
+})
+
+export default WhatCanIOffer

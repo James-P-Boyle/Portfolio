@@ -1,11 +1,11 @@
+import { forwardRef } from "react";
 import SectionBreak from "../../components/SectionBreak";
 import ProjectCard from "./components/ProjectCard";
-import ProjectContent from "./components/ProjectContent";
 
-export default function Projects() {
+const Projects = forwardRef<HTMLDivElement>((props, ref) => {
 
     return (
-        <section id="projects">
+        <section id="projects" ref={ref}>
             <h2>Projects</h2>
 
             <SectionBreak />
@@ -21,8 +21,8 @@ export default function Projects() {
             
 
         </section>
-    )
-}
+  )
+})
 
 export interface Project {
     name?: string
@@ -59,3 +59,5 @@ const projectsData: Project[] = [
       liveUrl: "https://memoey.com",
     },
 ];
+
+export default Projects

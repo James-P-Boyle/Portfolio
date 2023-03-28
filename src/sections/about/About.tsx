@@ -1,10 +1,12 @@
+import { RefObject, forwardRef } from "react"
 import SectionBreak from "../../components/SectionBreak"
 import SocialLinks from "../../components/SocialLinks"
 
-export default function About() {
 
+const About = forwardRef<HTMLDivElement>((props, ref) => {
+ 
     return (
-        <section id="about">
+        <section id="about" ref={ref}>
             <div>
                 {/* image */}
             </div>
@@ -19,5 +21,7 @@ export default function About() {
 
             <SocialLinks />
         </section> 
-    )
-} 
+  )
+})
+
+export default About

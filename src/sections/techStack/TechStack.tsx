@@ -1,9 +1,10 @@
+import { forwardRef } from "react"
 import SectionBreak from "../../components/SectionBreak"
-
-export default function TechStack() {
+    
+const TechStack = forwardRef<HTMLDivElement>((props, ref) => {
  
     return (
-        <section id="techStack">
+        <section id="techStack" ref={ref}>
 
             <h2>Tech Stack</h2>
 
@@ -112,4 +113,6 @@ export default function TechStack() {
 
         </section> 
     )
-} 
+})
+
+export default TechStack

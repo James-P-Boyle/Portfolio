@@ -1,10 +1,11 @@
+import { forwardRef } from "react"
 import SectionBreak from "../../components/SectionBreak"
 import { ExperienceCard } from "./components/ExperienceCard"
 
-export default function Experience() {
+const Experience = forwardRef<HTMLDivElement>((props, ref) => {
 
     return (
-        <section id="experience">
+        <section id="experience" ref={ref}>
 
             <h2>Relevant Expierence</h2>
 
@@ -37,5 +38,6 @@ export default function Experience() {
             </div>
         </section> 
     )
-} 
+})
 
+export default Experience
