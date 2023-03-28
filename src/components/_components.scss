@@ -21,7 +21,7 @@
     }
 }
 
-.btn-primary {
+.btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,11 +30,12 @@
   border-radius: 5px;
   background-color: transparent;
   min-width: 110px;
-  background-color: white;
+  background-color: $bg-color-light;
   transition: opacity 0.3s;
 
   &:hover {
     cursor: pointer;
+    background-color: white;
   }
 
   &.opacity {
@@ -58,13 +59,13 @@
     display: flex;
     padding: 0.5rem 1rem;
     font-size: 1.5rem;
-    background-color: #eee;
+    background-color: $bg-color-light;
     border: none;
     border-radius: 0.5rem;
     cursor: pointer;
     
     &:hover {
-      background-color: #ccc;
+      background-color: #fff;
     }
   }
 
@@ -73,8 +74,8 @@
     width: 2.5rem;
     
     @media (min-width: $md) { 
-      height: 3.5rem;
-      width: 3.5rem;
+      height: 3rem;
+      width: 3rem;
     }
   }
 }

@@ -15,7 +15,7 @@ export default function Button({
 }: ButtonProps) {
 
     return (
-        <button className={`btn-primary ${addedClasses}`} onClick={onClickFunction} type={type}>
+        <button className={`btn ${addedClasses}`} onClick={onClickFunction} type={type}>
             { children }
         </button> 
     )
