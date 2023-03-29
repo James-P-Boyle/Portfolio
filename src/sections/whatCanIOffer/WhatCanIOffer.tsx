@@ -8,8 +8,6 @@ const WhatCanIOffer = forwardRef<HTMLDivElement>((props, ref) => {
             
             <h2>What Can I Offer You</h2>
 
-            <SectionBreak />
-
             <div>
                 <span><strong>SEO</strong> and <strong>Performance Reviews</strong></span>
                 <span><strong>Clean Architecture</strong> and <strong>Best Practices</strong></span>

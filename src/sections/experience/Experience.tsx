@@ -8,8 +8,6 @@ const Experience = forwardRef<HTMLDivElement>((props, ref) => {
         <section id="experience" ref={ref}>
 
             <h2>Relevant Expierence</h2>
-
-            <SectionBreak />
             
             <ExperienceCard
                 position="Full Stack Developer"

@@ -7,8 +7,6 @@ const TechStack = forwardRef<HTMLDivElement>((props, ref) => {
         <section id="techStack" ref={ref}>
 
             <h2>Tech Stack</h2>
-
-            <SectionBreak />
     
             <h3>The Basics</h3>
 

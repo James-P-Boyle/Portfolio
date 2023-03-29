@@ -8,8 +8,6 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
         <section id="projects" ref={ref}>
             <h2>Projects</h2>
 
-            <SectionBreak />
-            
             {projectsData.map((project) => (
                 <ProjectCard 
                     name={project.name}
