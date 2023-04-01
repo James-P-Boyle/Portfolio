@@ -7,14 +7,14 @@ import Experience from './sections/experience/Experience'
 import Navigation from './sections/navigation/Navigation'
 import Projects from './sections/projects/Projects'
 import TechStack from './sections/techStack/TechStack'
-import WhatCanIOffer from './sections/whatCanIOffer/WhatCanIOffer'
+// import WhatCanIOffer from './sections/whatCanIOffer/WhatCanIOffer'
 
 export default function App() {
 
   const aboutRef = useRef<HTMLDivElement>(null);
   const experienceRef = useRef<HTMLDivElement>(null);
   const techStackRef = useRef<HTMLDivElement>(null);
-  const whatCanIOfferRef = useRef<HTMLDivElement>(null);
+  // const whatCanIOfferRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
 
   return (
@@ -23,7 +23,7 @@ export default function App() {
         aboutRef={aboutRef}
         experienceRef={experienceRef}
         techStackRef={techStackRef}
-        whatCanIOfferRef={whatCanIOfferRef}
+        // whatCanIOfferRef={whatCanIOfferRef}
         projectsRef={projectsRef}
       />
 
@@ -31,7 +31,7 @@ export default function App() {
         <About ref={aboutRef} />
         <Experience ref={experienceRef} />
         <TechStack ref={techStackRef} />
-        <WhatCanIOffer ref={whatCanIOfferRef} />
+        {/* <WhatCanIOffer ref={whatCanIOfferRef} /> */}
         <Projects ref={projectsRef} />
         <SocialLinks />
       </MainLayout>

@@ -5,17 +5,24 @@ onClickFunction?: () => void
 children: ReactNode
 type?: "button" | "submit" | "reset";
 addedClasses?: string
+id?: string
 }
 
 export default function Button({ 
     onClickFunction, 
     children, 
     type = "button", 
-    addedClasses
+    addedClasses,
+    id
 }: ButtonProps) {
 
     return (
-        <button className={`btn ${addedClasses}`} onClick={onClickFunction} type={type}>
+        <button 
+            id={id} 
+            className={`btn ${addedClasses}`} 
+            onClick={onClickFunction} 
+            type={type}
+        >
             { children }
         </button> 
     )

@@ -64,7 +64,13 @@
     cursor: pointer;
     
     &:hover {
-      background-color: #fff;
+      background-color: #ffffffaa;
+    }
+    svg {
+      &:hover {
+          transform: scale(1.2);
+          cursor: pointer;
+      }
     }
   }
 
@@ -78,6 +84,35 @@
     }
   }
 }
+
+@media (max-width: $md) { 
+  #hamburger {
+    
+    &.btn {
+      padding: 0;
+      min-width: auto;
+    }
+
+    position: fixed;
+    background-color: #ffffffd4;
+    border-radius: 50%;
+    right: 0;
+    margin: 0.2rem;
+    border: none;
+    z-index: 99;
+    animation: scaleIn 1.2s ease-in-out;
+  
+    svg {
+      height: 2.5rem;
+      width: 2.5rem;
+        &:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+    }
+  }
+}
+
   
 /* 
 
