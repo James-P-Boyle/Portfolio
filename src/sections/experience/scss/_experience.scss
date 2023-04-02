@@ -28,9 +28,17 @@
   gap: $gap;
   border-radius: $radius;
   padding: 1rem;
-  max-width: 500px;
+  max-width: 400px;
+ 
 
   background-color: white;
+
+  & div:first-child {
+
+    display: flex;
+    flex-direction: column;
+
+  }
   
   p {
       text-align: center;

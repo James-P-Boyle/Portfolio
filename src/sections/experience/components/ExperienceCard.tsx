@@ -20,17 +20,21 @@ export function ExperienceCard({ position, company, location, date, description 
     return (
         <div className={`experienceCard ${showDescription ? 'showDescription' : ''}`}>
 
-            <h3>{position}</h3>
-
+            
+            
             <div>
-                <em>
+                <span>{position}</span>
+            
+                <p>
                     <span>{company}</span>
                     <span> - </span>
                     <span>{location}</span>
-                </em>
+                </p>
+
+                <small>{date}</small>
             </div>
             
-            <h4>{date}</h4>
+            
 
             <Button onClickFunction={handleToggleDescription}>
                 {showDescription 
