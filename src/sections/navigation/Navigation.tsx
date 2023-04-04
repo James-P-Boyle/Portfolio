@@ -48,7 +48,7 @@ export default function Navigation({
         }
        
         if(isScrollingDown && isMobileScreen) {
-            setShowBurger(false)
+            // setShowBurger(false)
         }
 
     }, [isMobileScreen, isScrollingDown])

@@ -1,6 +1,5 @@
 import { forwardRef } from "react"
-import SectionBreak from "../../components/SectionBreak"
-import { ExperienceCard } from "./components/ExperienceCard"
+import { ExperienceCard } from "./ExperienceCard"
 
 const Experience = forwardRef<HTMLDivElement>((props, ref) => {
 

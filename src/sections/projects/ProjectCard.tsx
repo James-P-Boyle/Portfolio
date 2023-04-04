@@ -1,6 +1,6 @@
 import { useState } from "react"
-import Button from "../../../components/Button"
-import { Project } from "../Projects"
+import Button from "../../components/Button"
+import { Project } from "./Projects"
 
 interface ProjectCardProps extends Project {}
 

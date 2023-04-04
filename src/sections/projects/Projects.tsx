@@ -1,6 +1,5 @@
 import { forwardRef } from "react";
-import SectionBreak from "../../components/SectionBreak";
-import ProjectCard from "./components/ProjectCard";
+import ProjectCard from "./ProjectCard";
 
 const Projects = forwardRef<HTMLDivElement>((props, ref) => {
 
@@ -16,8 +15,6 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
                     imageUrl={project.imageUrl}
                 />
             ))}
-            
-
         </section>
   )
 })

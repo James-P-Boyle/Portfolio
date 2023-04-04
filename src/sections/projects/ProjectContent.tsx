@@ -1,4 +1,4 @@
-import { Project } from "../Projects"
+import { Project } from "./Projects"
 
 export default function ProjectContent({ description }: Project) {
 
