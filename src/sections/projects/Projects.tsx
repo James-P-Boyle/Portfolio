@@ -13,6 +13,8 @@ const Projects = forwardRef<HTMLDivElement>((props, ref) => {
                     description={project.description}
                     techStack={project.techStack}
                     imageUrl={project.imageUrl}
+                    liveUrl={project.liveUrl}
+                    repoUrl={project.repoUrl}
                 />
             ))}
         </section>
@@ -30,12 +32,12 @@ export interface Project {
 
 const projectsData: Project[] = [
     {
-      name: "Memoey",
-      description: "A social media website to share pictures of my daugther Zoey with my family and friends",
-      techStack: ["React", "Node.js", "MongoDB", "Node.js"],
-      imageUrl: "https://picsum.photos/200/300",
-      repoUrl: "https://github.com/memoey",
-      liveUrl: "https://memoey.com",
+      name: "The BoylerPlate",
+      description: "A blog for all things related to coding, built using laravel 10 and Typescript",
+      techStack: ["Laravel", "Typescript", "Tailwind", "Php"],
+      imageUrl: "public/images/boylerPlate.png",
+      repoUrl: "https://github.com/James-P-Boyle/BoylerPlate",
+      liveUrl: "http://stormy-journey-05006.herokuapp.com/",
     },
     {
       name: "Jamesy",

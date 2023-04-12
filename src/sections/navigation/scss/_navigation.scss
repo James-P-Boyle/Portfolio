@@ -37,11 +37,7 @@
         animation: slideUp 0.4s ease-in-out;
     }
     
-    // #socialLinks {
-    //     // @media (min-width: $md) {
-    //         display: none;
-    //     // }
-    // }
+
 
     @media (max-width: $md) { 
         inset: 0;
@@ -55,8 +51,16 @@
             bottom: auto;
             margin: 0 0.5rem;
         }
+    }
+
+   
+    @media (min-width: $md) {
+        #socialLinks {
+            display: none;
+        }
         
     }
+ 
 
 }
 

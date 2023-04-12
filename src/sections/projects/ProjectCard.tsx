@@ -68,7 +68,13 @@ export default function ProjectCard({
             <Button
                 addedClasses={`${showImage ? 'opacity' : ''}`}
             >
-                View Code
+               <a 
+                    href={repoUrl} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                >
+                    View Code
+                </a>
             </Button>
 
             <Button 
@@ -84,11 +90,14 @@ export default function ProjectCard({
             <Button
                 addedClasses={`${showImage ? 'opacity' : ''}`}
             >
-                <a href={liveUrl} target="_blank" rel="noopener noreferrer">
+                <a 
+                    href={liveUrl} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                >
                     View Live
                 </a>
             </Button>
-
         </div>
     </div>
     )
